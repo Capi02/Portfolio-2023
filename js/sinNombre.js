@@ -1,9 +1,27 @@
 
 document.addEventListener('DOMContentLoaded', function () {
-    typeText();
-    screeSize();
-    embla();
+    initApp();
 });
+
+function initApp(){
+    spinner();
+    typeText();
+    scrollNav();
+    embla();
+    
+}
+
+function scrollNav(){
+    const links = document.querySelectorAll(".navegation a");
+    links.forEach( link => {
+        link.addEventListener("click",function(e){
+            e.preventDefault();
+            
+            const section = document.querySelector(e.target.attributes.href.value);
+            section.scrollIntoView({ behavior: "smooth"});
+        })
+    })
+}
 
 let letter = 0;
 const text = "I'm a student halfway to becoming a software engineer, who loves coding.";
@@ -31,16 +49,16 @@ function embla() {
     var embla = EmblaCarousel(emblaNode, options, plugins);
 }
 
+// Agregar spinner al hacer clic en los enlaces
+const enlaces = document.querySelectorAll("a");
 
-function screeSize() {
-    const screenWidth = window.innerWidth; // lee el tamaño de la pantalla
-    const desktopIcons = document.querySelector("#desktop_icons")
+for (let i = 0; i < enlaces.length; i++) {
+  enlaces[i].addEventListener("click", function() {
+    spinner();
+  });
+}
 
-    console.log(screenWidth);
-
-    if(screenWidth < 600){ // revisa si es menor al tamaño especificado
-        desktopIcons.remove(); // lo elimina
-    }else{
-        return;
-    }
+// Función spinner
+function spinner() {
+ 
 }
