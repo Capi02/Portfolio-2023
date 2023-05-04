@@ -491,13 +491,12 @@ h2 {
   box-shadow: 10px 10px 6px -7px rgba(0, 0, 0, 0.56);
   transition: 0.5s ease-out;
   border: 4.5px solid #d7d5c0;
-  height: 25rem;
+  height: 18rem;
   margin-bottom: 3rem;
 }
 
 @media (min-width: 768px) {
   .project_card {
-    height: 18rem;
     margin: 0;
   }
 }
@@ -697,6 +696,10 @@ h2 {
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
+}
+
+.embla__slide img{
+  height: 100%;
 }
 
 #loader {
