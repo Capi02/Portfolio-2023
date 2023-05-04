@@ -686,7 +686,7 @@ h2 {
 
 @media (min-width: 768px) {
   .embla {
-    height: 30rem;
+    height: 33rem;
     width: 65rem;
   }
 }
@@ -700,6 +700,7 @@ h2 {
 
 .embla__slide img{
   height: 100%;
+  width: 100%;
 }
 
 #loader {
