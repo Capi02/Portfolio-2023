@@ -1,0 +1,15 @@
+@use "../base/mixins" as m;
+@use "../base/variables" as v;
+
+.footer_ele {
+    margin-top: 5rem;
+    height: 6rem;
+  }
+  
+  .footer_ele .footer_text {
+    text-align: center;
+    color: v.$bg-black;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  

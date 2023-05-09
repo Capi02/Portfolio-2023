@@ -1,0 +1,10 @@
+@use '../base/variables' as v;
+
+/* ? UTILITIES */
+.blue_text {
+    color: v.$blue-light;
+  }
+  
+  .green_text {
+    color: v.$utt-green;
+  }

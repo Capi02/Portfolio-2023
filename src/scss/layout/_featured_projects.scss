@@ -1,0 +1,78 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+/* ! FEATURED PROJECTS */
+.featured_projects {
+  height: 45rem;
+
+  @include m.tablet {
+    height: 50rem;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+
+}
+
+/* EMBLA CAROUSEL */
+.embla {
+  overflow: hidden;
+  margin: auto;
+  border: 7px solid v.$bg-black;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.embla:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .embla {
+    height: 33rem;
+    width: 65rem;
+  }
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.embla__slide img{
+  height: 100%;
+  width: 100%;
+}
+
+.button_container {
+  width: 100%;
+  text-align: end;
+  margin: auto;
+  display: flex;
+  justify-content: end;
+  height: auto;
+
+  @include m.tablet {
+    width: 65rem;
+  }
+
+  .projects_button {
+    background-color: v.$bg-black;
+    color: v.$blue-light;
+    display: flex;
+    height: 3.5rem;
+    width: 9rem;
+    font-family: v.$body-font;
+    font-size: 1.7rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: none;
+  }
+}

@@ -1,0 +1,54 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+/*! PROJECTS CARDS SECTION  */
+
+.projects_container {
+    padding: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .projects_container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+      padding: 0;
+      margin: 5rem 0;
+    }
+  }
+  
+  .project_card img {
+    height: 100%;
+    border-radius: 18px;
+  }
+  
+  .project_card:hover {
+    cursor: pointer;
+    border-color: #1aa3ca;
+  }
+  
+  .project_card {
+    background-color: var(--white-bone);
+    width: 100%;
+    border-radius: 2rem;
+    -webkit-box-shadow: 10px 10px 6px -7px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 10px 10px 6px -7px rgba(0, 0, 0, 0.56);
+    box-shadow: 10px 10px 6px -7px rgba(0, 0, 0, 0.56);
+    transition: 0.5s ease-out;
+    border: 4.5px solid #d7d5c0;
+    height: 18rem;
+    margin-bottom: 3rem;
+  }
+  
+  @media (min-width: 768px) {
+    .project_card {
+      margin: 0;
+    }
+  }
+  @media (min-width: 1400px) {
+    .project_card {
+      width: 100%;
+      height: 22rem;
+      margin: 0;
+    }
+  }
+  

@@ -1,0 +1,58 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+/* ! CONTACT_ICONS */
+
+.ul_icons {
+  display: flex;
+  padding: 0;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  li:hover {
+    position: relative;
+    animation-name: mover-hacia-arriba;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+ 
+  }
+
+  @keyframes mover-hacia-arriba {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-4px);
+    }
+  }
+}
+
+.icon_link:hover {
+  color: v.$blue-light;
+}
+
+@include m.tablet {
+  .left {
+    width: 40px;
+    position: fixed;
+    left: 40px;
+    z-index: 10;
+    height: 22rem;
+    bottom: 15rem;
+
+    .ul_icons {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 100%;
+
+     
+    }
+  }
+}
