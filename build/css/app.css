@@ -592,6 +592,7 @@ a {
   animation-duration: 0.2s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
+  transition: transform 0.5s;
 }
 @keyframes mover-hacia-arriba {
   from {
@@ -829,10 +830,10 @@ a {
   }
 }
 .logo_card img {
-  transition: width 0.5s;
+  transition: transform 0.5s;
 }
 .logo_card img:hover {
-  width: 100px;
+  transform: scale(1.2);
 }
 
 /* ! GET IN TOUCH SECTION */
