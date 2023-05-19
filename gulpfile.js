@@ -45,11 +45,6 @@ function avifVersion(done){
 }
 
 
-
-
-
-
-
 function dev(done){
     watch('src/scss/**/*.scss', css);
     done();
@@ -58,4 +53,4 @@ function dev(done){
 exports.css = css;
 exports.webpVersion = webpVersion;
 exports.avifVersion = avifVersion;
-exports.dev = parallel( dev); // webpVersion, avifVersion,
+exports.dev = parallel( webpVersion, avifVersion, dev); // webpVersion, avifVersion,
