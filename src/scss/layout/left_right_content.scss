@@ -15,6 +15,10 @@
     
   }
 
+  @include m.desktop{
+    display: flex;
+  }
+
   .li_icon {
     height: 48px;
     width: 40px;
@@ -29,7 +33,7 @@
   }
 }
 
-.icon_link:hover {
+.icon_link:hover, .li_icon:hover {
   color: v.$blue-light;
 }
 
@@ -38,8 +42,11 @@
     position: fixed;
     left: 40px;
     z-index: 10;
-    height: 22rem;
-    bottom: 15rem;
+    height: 100%;
+    display: flex; /* Agregamos flex para centrar verticalmente los contenidos */
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente los contenidos */
+    align-items: center; /* Centra horizontalmente los contenidos */
 
     .ul_icons {
       flex-direction: column;
@@ -47,8 +54,7 @@
       margin: 0;
       list-style: none;
       align-items: center;
-      justify-content: space-evenly;
-      height: 100%;
     }
   }
 }
+

@@ -1,0 +1,54 @@
+/* FONTS */
+/* ! CONTACT_ICONS */
+.ul_icons {
+  display: flex;
+  padding: 0;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .ul_icons {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .ul_icons {
+    display: flex;
+  }
+}
+.ul_icons .li_icon {
+  height: 48px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+  justify-content: center;
+}
+.ul_icons .li_icon:hover {
+  transform: translateY(-6px);
+}
+
+.icon_link:hover, .li_icon:hover {
+  color: #24b6e0;
+}
+
+@media (min-width: 768px) {
+  .left {
+    position: fixed;
+    left: 40px;
+    z-index: 10;
+    height: 100%;
+    display: flex; /* Agregamos flex para centrar verticalmente los contenidos */
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente los contenidos */
+    align-items: center; /* Centra horizontalmente los contenidos */
+  }
+  .left .ul_icons {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+  }
+}

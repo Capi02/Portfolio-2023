@@ -87,3 +87,26 @@ a {
     margin: 0 auto;
   }
 }
+
+.section_title {
+  text-align: center;
+  margin-bottom: 5rem;
+  color: v.$blue-light;
+  font-size: 3rem;
+}
+
+
+.left_line_vertical,
+.right_line_vertical {
+  width: 0.5px; /* Ancho de las líneas verticales */
+  background-color: white; /* Color de las líneas */
+  height: 90%;
+}
+
+.left_line_vertical{
+  margin: 0 0 2rem 0;
+}
+
+.right_line_vertical{
+  margin: 2rem 0 0 0;
+}

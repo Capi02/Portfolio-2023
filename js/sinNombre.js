@@ -11,7 +11,7 @@ function initApp(){
 }
 
 function scrollNav(){
-    const links = document.querySelectorAll(".navegation a");
+    const links = document.querySelectorAll(".smooth_link");
     links.forEach( link => {
         link.addEventListener("click",function(e){
             e.preventDefault();

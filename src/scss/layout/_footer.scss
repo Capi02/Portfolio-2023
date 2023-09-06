@@ -2,13 +2,15 @@
 @use "../base/variables" as v;
 
 .footer_ele {
-    margin-top: 5rem;
-    height: 6rem;
-  }
-  
-  .footer_ele .footer_text {
-    text-align: center;
-    font-size: 17px;
-    font-weight: 700;
-  }
-  
+  margin-top: 5rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_ele .footer_text {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+}
