@@ -17,7 +17,6 @@
 }
 
 .contact_message {
-  color: v.$bg-black;
   font-size: 1.7rem;
   font-weight: 600;
   margin: auto;
@@ -32,6 +31,8 @@
 }
 
 .contact_button {
+  display: flex;
+  height: auto;
   color: v.$bg-black;
   padding: 0.8em 1.7em;
   background-color: transparent;
@@ -43,7 +44,6 @@
   font-weight: 500;
   font-size: 18px;
   border: 1px solid v.$blue-light;
-  font-family: inherit;
   text-transform: uppercase;
   color: v.$blue-light;
   z-index: 1;

@@ -1,4 +1,5 @@
 @use "../base/mixins" as m;
+@use "../base/variables" as v;
 
 .header {
   padding: 1rem;
@@ -18,14 +19,20 @@
 }
 
 .nav_link {
-    display: block;
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: 800;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 1rem;
+  font-family: v.$titles_font;
+  display: block;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 800;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+
+  &:hover{
+    color: v.$blue-light;
+    transition: 0.3s ease-in-out;
   }
+}
 
 @include m.desktop {
   .bar {
@@ -50,4 +57,3 @@
     align-items: center;
   }
 }
-

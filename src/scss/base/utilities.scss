@@ -2,9 +2,11 @@
 
 /* ? UTILITIES */
 .blue_text {
-    color: v.$blue-light;
+   -webkit-text-fill-color: transparent;
+   -webkit-text-stroke: 2px v.$blue-light;
   }
   
   .green_text {
     color: v.$utt-green;
+    font-weight: bold;
   }

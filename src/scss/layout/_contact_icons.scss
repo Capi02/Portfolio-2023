@@ -10,22 +10,21 @@
   justify-content: center;
   align-items: center;
 
-  li:hover {
-    position: relative;
-    animation-name: mover-hacia-arriba;
-    animation-duration: 0.2s;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-    transition: transform 0.5s;
- 
+  @include m.tablet{
+    display: none;
+    
   }
 
-  @keyframes mover-hacia-arriba {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(-4px);
+  .li_icon {
+    height: 48px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+    justify-content: center;
+
+    &:hover {
+      transform: translateY(-6px);
     }
   }
 }
@@ -36,7 +35,6 @@
 
 @include m.tablet {
   .left {
-    width: 40px;
     position: fixed;
     left: 40px;
     z-index: 10;
@@ -44,7 +42,6 @@
     bottom: 15rem;
 
     .ul_icons {
-      display: flex;
       flex-direction: column;
       padding: 0;
       margin: 0;
@@ -52,8 +49,6 @@
       align-items: center;
       justify-content: space-evenly;
       height: 100%;
-
-     
     }
   }
 }

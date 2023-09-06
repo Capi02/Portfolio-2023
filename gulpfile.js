@@ -1,3 +1,4 @@
+
 const { src, dest, watch, parallel } = require('gulp');
 
 // CSS
@@ -53,4 +54,4 @@ function dev(done){
 exports.css = css;
 exports.webpVersion = webpVersion;
 exports.avifVersion = avifVersion;
-exports.dev = parallel( webpVersion, avifVersion, dev); // webpVersion, avifVersion,
+exports.dev = parallel(dev); // webpVersion, avifVersion, 

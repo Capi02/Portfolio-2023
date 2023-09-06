@@ -7,7 +7,6 @@ function initApp(){
     spinner();
     typeText();
     scrollNav();
-    embla();
     
 }
 
@@ -35,21 +34,6 @@ function typeText() {
     }
 }
 
-function embla() {
-    var emblaNode = document.querySelector(".embla");
-    var options = {
-        loop: true,
-        jump: true,
-        rootNode: (emblaNode) => emblaNode.parentElement(),
-        stopOnMouseEnter: true,
-    };
-
-    var plugins = [EmblaCarouselAutoplay()]; // Plugins
-
-    var embla = EmblaCarousel(emblaNode, options, plugins);
-}
-
-// Agregar spinner al hacer clic en los enlaces
 const enlaces = document.querySelectorAll("a");
 
 for (let i = 0; i < enlaces.length; i++) {
@@ -62,3 +46,4 @@ for (let i = 0; i < enlaces.length; i++) {
 function spinner() {
  
 }
+
