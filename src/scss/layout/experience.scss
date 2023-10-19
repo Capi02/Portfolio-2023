@@ -1,0 +1,75 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.experience_container {
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: 2% 98%;
+
+  .experience_left_content {
+    height: auto;
+    margin-right: 1rem;
+    
+    .vertical_line {
+      width: 1px; /* Ancho de la línea vertical */
+      height: 100%; /* Altura de la línea vertical */
+      background-color: white;
+      position: relative;
+      margin: 0 auto; /* Centra la línea horizontalmente */
+
+      .circle {
+        width: 7px; /* Diámetro del círculo */
+        height: 7px;
+        background-color: white;
+        border-radius: 50%; /* Hace que el círculo sea redondeado */
+        position: absolute;
+        top: -10px; /* Coloca el círculo arriba de la línea vertical */
+        left: 50%; /* Centra el círculo horizontalmente */
+        transform: translateX(
+          -50%
+        ); /* Ajusta la posición horizontal del círculo */
+      }
+    }
+  }
+
+  .experience_right_content {
+    padding: 1rem;
+  }
+}
+
+.job_title_container {
+  margin-bottom: 0.6rem;
+  justify-content: space-between;
+  align-items: center;
+
+  h3 {
+    font-size: 2.1rem;
+    color: v.$main_green;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    color: v.$main_green;
+  }
+}
+
+.job_date_container {
+  margin-bottom: 1rem;
+
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+.job_description_container {
+  text-align: justify;
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.job_title_container,
+.job_description_container,
+.job_date_container {
+  display: flex;
+}

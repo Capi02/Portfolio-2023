@@ -34,7 +34,7 @@
 }
 
 .icon_link:hover, .li_icon:hover {
-  color: v.$blue-light;
+  color: v.$main_green;
 }
 
 @include m.tablet {
@@ -45,7 +45,7 @@
     height: 100%;
     display: flex; /* Agregamos flex para centrar verticalmente los contenidos */
     flex-direction: column;
-    justify-content: center; /* Centra verticalmente los contenidos */
+    justify-content: end; /* Centra verticalmente los contenidos */
     align-items: center; /* Centra horizontalmente los contenidos */
 
     .ul_icons {
@@ -56,5 +56,28 @@
       align-items: center;
     }
   }
+
+  .right {
+    position: fixed;
+    right: 40px;
+    width: 40px;
+    z-index: 10;
+    height: 100%;
+    display: flex; /* Agregamos flex para centrar verticalmente los contenidos */
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los contenidos */   
+  }
 }
+
+.vertical-text {
+  font-family: 'Caveat', cursive;;
+  writing-mode: vertical-rl; /* Gira el texto verticalmente de derecha a izquierda */
+  text-orientation: mixed; /* Asegura que los caracteres se orienten correctamente */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  transform: rotate(360deg); /* Voltea el texto para que sea legible */
+  transform-origin: center;
+  font-size: 2.3rem;
+}
+
+
 

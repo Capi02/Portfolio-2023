@@ -3,14 +3,12 @@
 
 /* ! GET IN TOUCH SECTION */
 .contact {
-  height: 35rem;
-  margin: 0 auto;
+  height: auto;
   text-align: center;
-  padding: 7rem;
   width: auto;
 
   .get_in_touch_title {
-    color: v.$blue-light;
+    color: v.$main_green;
     font-size: 3rem;
     margin: 1rem;
   }
@@ -26,8 +24,6 @@
   @include m.tablet {
     width: 35rem;
   }
-
-
 }
 
 .contact_button {
@@ -43,9 +39,9 @@
   transition: 0.5s;
   font-weight: 500;
   font-size: 18px;
-  border: 1px solid v.$blue-light;
+  border: 1px solid v.$main_green;
   text-transform: uppercase;
-  color: v.$blue-light;
+  color: v.$main_green;
   z-index: 1;
   width: 12rem;
   height: 5rem;
@@ -63,7 +59,7 @@
   position: absolute;
   border-radius: 50%;
   z-index: -1;
-  background-color: v.$blue-light;
+  background-color: darken(v.$main_green, 15);
   transition: 1s ease;
 }
 

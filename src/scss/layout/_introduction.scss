@@ -8,6 +8,11 @@
   height: auto;
   padding: 3rem;
 
+  @include m.cellphone {
+    height: auto;
+    padding: 2rem;
+  }
+
   h1 {
     font-size: 7rem;
   }
@@ -20,114 +25,57 @@
       font-size: 3rem;
     }
   }
-
-  h1,
-  h2 {
-    margin: 1rem;
-  }
-}
-
-@include m.cellphone {
-  .typingEffect_div {
-    height: auto;
-    padding: 2rem;
-  }
-}
-
-.introduction {
-  height: auto;
-
-  @include m.tablet{
-    display: grid;
-    grid-template-columns: 40% 60%;
-    margin: 6rem 1rem;
-    height: 28rem;
-  }
-  @include m.desktop {
-    display: grid;
-    grid-template-columns: 25% 75%;
-    height: 25rem;
-    gap: 3rem;
-    margin: 6rem 1rem;
-  }
-
-  @include m.desktopXL{
-    height: 31rem;
-  }
-
-  .introduction_photo_container {
-    height: 30rem;
-    padding: 2rem;
-
-    @include m.tablet{
-      padding: 0.4rem;
-      border: 5px solid white; /* Borde transparente */
-      border-radius: 50%; /* Hacer un borde circular */
-      background-color: transparent; /* Fondo transparente */
-      height: 26.5rem;
-    }
-
-    @include m.desktop {
-      padding: 0.4rem;
-      border: 5px solid white; /* Borde transparente */
-      border-radius: 50%; /* Hacer un borde circular */
-      background-color: transparent; /* Fondo transparente */
-      height: auto;
-      
-    }
-  }
-
-  .introduction_text_container {
-    display: flex;
-    align-items: center;
-
-    @include m.tablet{
-      padding: 3rem;
-    }
-  }
-}
-
-// Photo styles
-.introduction_photo {
-  border-radius: 50%;
-  width: 95%;
-  height: 95%;
-  object-fit: cover;
-  padding: 1rem;
-  margin: 0.6rem;
-  border: 3px solid white;
 }
 
 .blur {
   position: absolute;
-  box-shadow: 0 0 1000px 50px v.$blue-light;
+  box-shadow: 0 0 1000px 50px v.$main_green;
   z-index: -100;
 }
 
-.who_am_i {
-  color: v.$blue-light;
-  text-align: center;
-  font-family: v.$titles_font;
-  font-size: 2.1rem;
-  margin-bottom: 2rem;
+/* About me section */
+
+.about_me_section {
+  padding: 2rem;
+
+  .introduction {
+    @include m.desktop {
+      display: grid;
+      grid-template-columns: 35% 65%;
+    }
+  }
 }
 
-.intro_text {
-  margin: auto;
-  font-size: 1.3rem;
-  color: white;
-  text-align: center;
+.introduction_photo_container {
+  .introduction_photo {
+    margin-bottom: 3rem;
 
-  @include m.tablet {
-    font-size: 1.5rem;
-   
+    @include m.desktop{
+      margin-bottom: 0;
+    }
   }
+}
 
+.introduction_text_container {
+
+  border-radius: 7px;
+  padding: 2rem;
   @include m.desktop {
-    font-size: 1.8rem;
+    
   }
 
-  @include m.desktopXL {
-    font-size: 1.9rem;
+  .who_am_i_title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.8rem;
+    font-family: v.$special_font;
+  }
+
+  .introduction_text {
+    font-size: 1.8rem;
+
+    @include m.tablet {
+      font-size: 1.5rem;
+    }
   }
 }

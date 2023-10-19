@@ -2,8 +2,7 @@
 @use "../base/variables" as v;
 
 .header {
-  padding: 1rem;
-  width: 100%;
+  padding: 2rem;
 }
 
 @include m.tablet {
@@ -12,11 +11,21 @@
   }
 }
 
-.logo {
+.logo_container {
   height: 70px;
-  width: 70px;
-  margin: auto;
+  width: 8rem;
+  display: flex;
+  align-items: center;
+
+  .logo_title{
+    font-family: 'Caveat', cursive;
+    font-size: 4rem;
+    width: 100%;
+
+  }
+  
 }
+
 
 .nav_link {
   font-family: v.$titles_font;
@@ -29,7 +38,7 @@
   margin-bottom: 1rem;
 
   &:hover{
-    color: v.$blue-light;
+    color: v.$main_green;
     transition: 0.3s ease-in-out;
   }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* FONTS */
 /* ! CONTACT_ICONS */
 .ul_icons {
@@ -30,7 +31,7 @@
 }
 
 .icon_link:hover, .li_icon:hover {
-  color: #24b6e0;
+  color: #4BC596;
 }
 
 @media (min-width: 768px) {
@@ -51,4 +52,23 @@
     list-style: none;
     align-items: center;
   }
+  .right {
+    position: fixed;
+    right: 40px;
+    width: 40px;
+    z-index: 10;
+    height: 100%;
+    display: flex; /* Agregamos flex para centrar verticalmente los contenidos */
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los contenidos */
+  }
+}
+.vertical-text {
+  font-family: "Caveat", cursive;
+  writing-mode: vertical-rl; /* Gira el texto verticalmente de derecha a izquierda */
+  text-orientation: mixed; /* Asegura que los caracteres se orienten correctamente */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  transform: rotate(360deg); /* Voltea el texto para que sea legible */
+  transform-origin: center;
+  font-size: 2.3rem;
 }

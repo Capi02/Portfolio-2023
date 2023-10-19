@@ -13,7 +13,7 @@
 
     <link
       rel="shortcut icon"
-      href="./build/img/logo_white_background.webp"
+      href="./src/img/code_icon.svg"
       type="image/x-icon"
     />
 
@@ -33,12 +33,19 @@
       rel="stylesheet"
     />
 
-    <title>Portfolio</title>
+    <!-- Cursive font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>EC | Portfolio</title>
   </head>
 
   <body>
     <div class="left" id="desktop_icons">
-      <hr class="left_line_vertical" />
       <ul class="ul_icons">
         <li class="li_icon">
           <a href="https://github.com/Capi02" class="icon_link">
@@ -191,30 +198,35 @@
           </a>
         </li>
       </ul>
-      <hr class="right_line_vertical" />
+      <hr class="bottom_line_vertical" />
     </div>
 
-    <header class="header">
-      <div class="container">
-        <div class="bar">
-          <div class="logo">
-            <a href="index.html">
-              <h2>EC</h2>
-            </a>
-          </div>
-          <nav class="navegation">
-            <li>
-              <a href="#aboutMe" class="nav_link smooth_link">About me</a>
-            </li>
-            <li><a href="projects.html" class="nav_link">Projects</a></li>
-            <li>
-              <a href="#technologies" class="nav_link smooth_link"
-                >Technologies</a
-              >
-            </li>
-            <li><a href="#contact" class="nav_link smooth_link">Contact</a></li>
-          </nav>
+    <div class="right" id="desktop_icons">
+      <hr class="top_line_vertical" />
+      <div class="vertical-text">
+        <p>Software Developer</p>
+      </div>
+    </div>
+
+    <header class="container header">
+      <div class="bar">
+        <div class="logo_container">
+          <a href="index.html">
+            <h2 class="logo_title">EC</h2>
+          </a>
         </div>
+        <nav class="navegation">
+          <li>
+            <a href="#aboutMe" class="nav_link smooth_link">About me</a>
+          </li>
+          <li><a href="#projects" class="nav_link smooth_link">Projects</a></li>
+          <li>
+            <a href="#technologies" class="nav_link smooth_link"
+              >Technologies</a
+            >
+          </li>
+          <li><a href="#contact" class="nav_link smooth_link">Contact</a></li>
+        </nav>
       </div>
     </header>
 
@@ -227,175 +239,155 @@
       </div>
     </div>
 
-    <section class="container section_container" id="aboutMe">
+    <section class="container" id="aboutMe">
       <div class="typingEffect_div">
-        <span class="blur"></span>
-        <span class="blur"></span>
+        <!-- <span class="blur"></span>
+        <span class="blur"></span> -->
         <h1>Hi, I'm <span class="blue_text">Erick</span></h1>
         <h2 id="demo"></h2>
       </div>
+    </section>
 
+    <section class="container about_me_section mt mb">
       <div class="introduction">
         <div class="introduction_photo_container">
           <img
-            src="../src/img/option2.JPG"
+            src="./src/img/programmer_img.svg"
             alt="My photo"
             class="introduction_photo"
             loading="lazy"
           />
         </div>
-
         <div class="introduction_text_container">
-          <div>
-            <h3 class="who_am_i">Who am I?</h3>
-            <p class="intro_text">
-              I'm a guy who likes coding, seeing those little changes day by day
-              of the project, and at the end of the day seeing the final result
-              is amazing, the work of days, weeks and even months, I like to
-              work coding projects in a team or with a partner, I'm one of the
-              people who believes that it is always valuable the creativity and
-              thinking of another person, and it is always helpful to have some
-              help :D
+          <h3 class="who_am_i_title">Who am I?</h3>
+          <p class="introduction_text">
+            I'm a guy who likes coding, seeing those little changes day by day
+            of the project, and at the end of the day seeing the final result is
+            amazing, the work of days, weeks and even months, I like to work
+            coding projects in a team or with a partner, I'm one of the people
+            who believes that it is always valuable the creativity and thinking
+            of another person, and it is always helpful to have some help :D
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt mb">
+      <h2 class="section_title">Experience</h2>
+
+      <div class="experience_container">
+        <div class="experience_left_content">
+          <div class="vertical_line">
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="experience_right_content">
+          <div class="job_title_container">
+            <h3 class="job_title">IT Intern</h3>
+            <h4>Panasonic Automotive Systems de México S.A de C.V.</h4>
+          </div>
+          <div class="job_date_container">
+            <p class="job_date">Sep - 2023 / Present</p>
+          </div>
+          <div class="job_description_container">
+            <p class="job_description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              excepturi at blanditiis sint minus voluptas dolores, quo
+              praesentium, tempore cum corrupti quasi laboriosam provident rerum
+              temporibus minima sit nihil? Dolore! Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Ullam recusandae mollitia,
+              consectetur, ipsum inventore rerum, ipsa optio beatae quisquam
+              possimus ea assumenda impedit enim sunt temporibus adipisci saepe?
+              Magni, quasi.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience_container">
+        <div class="experience_left_content">
+          <div class="vertical_line">
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="experience_right_content">
+          <div class="job_title_container">
+            <h3 class="job_title">Web Developer</h3>
+            <h4>Mongar Pisos y Persianas</h4>
+          </div>
+          <div class="job_date_container">
+            <p class="job_date">Sep - 2022 / Dic - 2022</p>
+          </div>
+          <div class="job_description_container">
+            <p class="job_description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              excepturi at blanditiis sint minus voluptas dolores, quo
+              praesentium, tempore cum corrupti quasi laboriosam provident rerum
+              temporibus minima sit nihil? Dolore! Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Ullam recusandae mollitia,
+              consectetur, ipsum inventore rerum, ipsa optio beatae quisquam
+              possimus ea assumenda impedit enim sunt temporibus adipisci saepe?
+              Magni, quasi.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="container school_section">
-      <div class="hero">
-        <div class="overlay">
-          <div class="school_text_container">
-            <p class="school_text">
-              I am currently studying Information Technology career, majoring in
-              Multiplatform Software Development at the
-              <span class="green_text">
-                Universidad Tecnológica de Tamaulipas Norte</span
-              >, Mexico. I am halfway to finish my degree, and graduate as a
-              Software Development Engineer.<span
-                class="terminal_cursor"
-              ></span>
-            </p>
+    <section class="container mt mb" id="projects">
+      <h2 class="section_title">Projects</h2>
+
+      <div class="projects_container">
+        <div class="project_card">
+          <div class="project_image_container">
+            <img
+              src="./src/img/blogCafe_project.png"
+              alt="Blog de cafe Image"
+              class="project_image"
+            />
+          </div>
+          <div class="project_details_container">
+            <h3>Nombre del Proyecto</h3>
+            <div class="buttons">
+              <a href="#" class="github-button">GitHub Code</a>
+              <a href="#" class="demo-button">Watch Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project_card">
+          <div class="project_image_container">
+            <img src="./src/img/coming_soon.jpg" alt="Proyecto" />
+          </div>
+          <div class="project_details_container">
+            <h3>Nombre del Proyecto</h3>
+            <div class="buttons">
+              <a href="#" class="github-button">GitHub Code</a>
+              <a href="#" class="demo-button">Watch Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project_card">
+          <div class="project_image_container">
+            <img src="./src/img/coming_soon.jpg" alt="Proyecto" />
+          </div>
+          <div class="project_details_container">
+            <h3>Nombre del Proyecto</h3>
+            <div class="buttons">
+              <a href="#" class="github-button">GitHub Code</a>
+              <a href="#" class="demo-button">Watch Demo</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="container skills_section" id="technologies">
-      <h2 class="section_title">Technologies</h2>
-      <div class="skills_container">
-        <div class="logo_card">
-          <picture>
-            <source srcset="./build/img/csharp_logo.avif" type="image/avif" />
-            <img
-              src="./build/img/csharp_logo.webp"
-              alt=" C sharp logo"
-              loading="lazy"
-            />
-          </picture>
-        </div>
-
-        <div class="logo_card">
-          <picture>
-            <source srcset="./build/img/js_logo.avif" type="image/avif" />
-            <img
-              src="./build/img/js_logo.webp"
-              alt="JavaScript logo"
-              loading="lazy"
-            />
-          </picture>
-        </div>
-
-        <div class="logo_card">
-          <picture>
-            <source srcset="./build/img/sql_logo.avif" type="image/avif" />
-            <img
-              src="./build/img/sql_logo.webp"
-              alt=" Sql logo"
-              loading="lazy"
-            />
-          </picture>
-        </div>
-
-        <div class="logo_card">
-          <picture>
-            <source srcset="./build/img/sass_logo.avif" type="image/avif" />
-            <img
-              src="./build/img/sass_logo.webp"
-              alt=" SASS logo"
-              loading="lazy"
-            />
-          </picture>
-        </div>
-
-        <div class="logo_card">
-          <picture>
-            <source srcset="./build/img/html_logo.avif" type="image/avif" />
-            <img
-              src="./build/img/html_logo.webp"
-              alt=" Html logo"
-              loading="lazy"
-            />
-          </picture>
-        </div>
-
-        <div class="logo_card">
-          <picture>
-            <source srcset="./build/img/css_logo.avif" type="image/avif" />
-            <img
-              src="./build/img/css_logo.webp"
-              alt=" Css logo"
-              loading="lazy"
-            />
-          </picture>
-        </div>
-        <div class="logo_card">
-          <picture>
-            <source srcset="./build/img/npm_logo.avif" type="image/avif" />
-            <img
-              src="./build/img/npm_logo.webp"
-              alt=" Npm logo"
-              loading="lazy"
-            />
-          </picture>
-        </div>
-        <div class="logo_card">
-          <picture>
-            <source srcset="./build/img/git_logo.avif" type="image/avif" />
-            <img
-              src="./build/img/git_logo.webp"
-              alt=" Git logo"
-              loading="lazy"
-            />
-          </picture>
-        </div>
-        <div class="logo_card">
-          <picture>
-            <!-- <source srcset="./build/img/nodejs_logo.avif" type="image/avif" /> -->
-            <img
-              src="./src/img/nodejs_logo.webp"
-              alt=" Nodejs logo"
-              loading="lazy"
-            />
-          </picture>
-        </div>
-        <div class="logo_card">
-          <picture>
-            <!-- <source
-              srcset="./build/img/mongodb_logo.png.avif"
-              type="image/avif"
-            /> -->
-            <img
-              src="./src/img/mongodb_logo.svg"
-              alt=" Mongodb logo"
-              loading="lazy"
-            />
-          </picture>
-        </div>
-      </div>
+    <section class="container skills_section mt mb" id="technologies">
+       
     </section>
 
-    <section class="container contact" id="contact">
+    <section class="container contact mb" id="contact">
       <h2 class="get_in_touch_title">Get In Touch</h2>
       <p class="contact_message">
         If you want to contact me for a new opportunity, my inbox is always
